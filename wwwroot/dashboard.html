@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Museum Artifact Manager</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+</head>
+<body>
+
+  <!-- SIDEBAR -->
+  <nav class="sidebar">
+    <div class="sidebar-header">
+      <h2>🏛️ Museum</h2>
+      <p>Artifact Manager</p>
+    </div>
+    <ul class="sidebar-nav">
+      <li><a href="dashboard.html" class="active"><span class="icon">📊</span><span>Dashboard</span></a></li>
+      <li><a href="artifacts.html"><span class="icon">🏺</span><span>Hiện vật</span></a></li>
+      <li><a href="exhibitions.html"><span class="icon">🖼️</span><span>Triển lãm</span></a></li>
+      <li><a href="staff.html"><span class="icon">👤</span><span>Nhân viên</span></a></li>
+      <li><a href="restorations.html"><span class="icon">🔧</span><span>Phục chế</span></a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN -->
+  <main class="main-content">
+    <div class="page-header">
+      <h1>Dashboard</h1>
+      <p>Tổng quan hệ thống quản lý hiện vật bảo tàng</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-icon artifacts">🏺</div>
+        <div class="stat-info">
+          <h3 id="artifact-count">--</h3>
+          <p>Hiện vật</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon exhibitions">🖼️</div>
+        <div class="stat-info">
+          <h3 id="exhibition-count">--</h3>
+          <p>Triển lãm</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon staff">👤</div>
+        <div class="stat-info">
+          <h3 id="staff-count">--</h3>
+          <p>Nhân viên</p>
+        </div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-icon restorations">🔧</div>
+        <div class="stat-info">
+          <h3 id="restoration-count">--</h3>
+          <p>Phục chế</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

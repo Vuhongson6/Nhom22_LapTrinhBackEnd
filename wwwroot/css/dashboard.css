@@ -1,0 +1,64 @@
+/* ===== DASHBOARD STATS ===== */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.stat-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 28px 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+}
+
+.stat-icon.artifacts {
+  background: rgba(224, 165, 38, 0.12);
+  color: #e0a526;
+}
+
+.stat-icon.exhibitions {
+  background: rgba(52, 152, 219, 0.12);
+  color: #3498db;
+}
+
+.stat-icon.staff {
+  background: rgba(46, 204, 113, 0.12);
+  color: #2ecc71;
+}
+
+.stat-icon.restorations {
+  background: rgba(155, 89, 182, 0.12);
+  color: #9b59b6;
+}
+
+.stat-info h3 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a1a2e;
+}
+
+.stat-info p {
+  font-size: 14px;
+  color: #888;
+  margin-top: 2px;
+}
